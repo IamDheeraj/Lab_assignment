@@ -1,0 +1,306 @@
+for loop:
+
+for(i=10;i>=1;i--)
+{
+i
+}
+
+++i (pre increament)
+i=10
+a=i++
+a=10
+i++ (post increament)
+
+package Manish;
+
+public class Pre_post_demo {
+	public static void main(String[] args) 
+	{
+		int a=10;
+		System.out.println("a="+ ++a);
+		System.out.println("a="+a);
+	}
+
+}
+---------------------
+For EX:
+
+package Manish;
+public class pro1 {
+	public static void main(String[] args) 
+	{
+		int i;
+		int counter=1;
+		for(i =10; i>=1;i--)
+		{
+			System.out.println("i="+counter);
+			counter++;
+		}
+		 
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+while loop:
+
+EX:
+package Manish;
+import java.util.Scanner;
+public class range_no {
+	public static void main(String[] args) 
+	{
+		int min,max;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter min value");
+		min=sc.nextInt();
+		System.out.println("Enter Max number");
+		max=sc.nextInt();
+	/*	for(i=min;i<=max;i++)
+		{
+			System.out.print(i+"\t");
+		}  */
+		while(min<=max)
+		{
+			System.out.print(min+"\t");
+			min++;
+		}
+	}
+
+}
+
+-----------------
+package Manish;
+
+import java.util.Scanner;
+
+public class while_demo {
+	public static void main(String[] args) {
+		int num,fact=1;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a no");
+		num=sc.nextInt();
+		while(num>=1)
+		{
+			fact=fact*num;
+			num--;
+		}
+		System.out.println("The factorial is="+fact);
+	}
+
+}
+
+
+
+
+
+Food ordering system
+
+S
+M
+D
+: M
+
+I1
+I2
+I3:
+Do you want to add any more food
+Y
+
+S
+M
+D
+:D
+Item2:
+
+N
+
+Item Amount
+
+Do while EX:
+package Manish;
+import java.util.Scanner;
+class dowhile_demo {
+	public static void main(String[] args) 
+	{
+		int choice;
+		char ans;
+		Scanner sc=new Scanner(System.in);
+		do
+		{
+			System.out.println("Menu or your own hotel");
+			System.out.println("1:Item1 \t\t\t RS:150");
+			System.out.println("2:Item2 \t\t\t RS:150");
+			System.out.println("3:Item3 \t\t\t RS:150");
+			System.out.println("4:Item4 \t\t\t RS:150");
+			choice=sc.nextInt();
+			
+			System.out.println("Do you want to add another Item Y/N");
+			ans=sc.next().charAt(0);
+		}while(ans=='y'||ans=='Y');
+
+		System.out.println("Thanks for Coming / Biill display");
+	}
+
+}
+
+
+
+
+
+
+*****
+*****
+*****
+*****
+
+package Manish;
+public class Nested_demo {
+	public static void main(String[] args) 
+	{
+		int i,j;
+		for(i=1;i<=5;i++)//
+		{
+			for(j=1;j<=5;j++) // Inner Loop
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+
+
+
+
+*		i=1 j=1
+**		i=2 j=1,2
+***		i=3 j=1,2,3
+****		i=4 j=1,2,3,4
+*****		i=5 j=1,2,3,4,5
+
+package Manish;
+public class Nested_demo {
+	public static void main(String[] args) 
+	{
+		int i,j;
+		for(i=1;i<=5;i++)//
+		{
+			for(j=1;j<=i;j++) // Inner Loop
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+--------------
+    *		i=1 j=1
+   ***		i=2 j=3
+  *****		i=3 j=5
+ *******	i=4 j=7
+*********	i=5 j=9
+
+package Manish;
+public class Nested_demo {
+	public static void main(String[] args) 
+	{
+		int i,j;
+		for(i=1;i<=5;i++)//
+		{
+			for(j=4;j>=i;j--)
+			{
+				System.out.print(" ");
+			}
+			for(j=1;j<=2*i-1;j++) // Inner Loop
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+
+
+
+
+HW:
+
+*********
+ *******
+  *****
+   ***
+    *
+
+    *
+   **
+  ***
+ ****
+*****
+
+
+
+1
+10
+101
+1010
+10101
+
+
+    1
+   01
+  101
+ 0101
+10101
+
+
+*******
+*     *
+*     *
+*******
+
+
+
+****
+*   *
+*   *
+****
+*
+*
+*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
